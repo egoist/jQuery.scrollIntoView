@@ -9,7 +9,7 @@ When a DIV is scrolled into or out of the visible part of browser it executes a 
 $.scrollIntoView(mount, unmount, once)
 
 **mount**: function, executed when scrolled into the view  
-**unmount**: function, executed when scrolled out of the view
+**unmount**: function, executed when scrolled out of the view  
 **once**: boolean, default is false, it will still trigger the function when the specific element is already visible in view unless `once` is set to be `true`.
 
 ```javascript
