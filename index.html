@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery.scrollIntoView</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css" media="screen">
+    <style media="screen">
+      body {
+        font: 14px/1.4 Hack, Helvetica, arial, serif;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .m {
+        width: 300px;
+        padding: 140px 0;
+        background-color: #ccc;
+        color: #333;
+        display: inline-block;
+        font-size: 23px;
+        border: 1px solid #333;
+      }
+      hr {
+        width: 100px;
+        border: none;
+        background-color: #e2e2e2;
+        margin: 40px auto;
+        height: 1px;
+      }
+      .m1 {
+        margin-top: 40px;
+      }
+      footer {
+        margin: 80px 0;
+      }
+      footer a {
+        color: #333;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery.scrollIntoView</h1>
+    <h2>try to scroll 'm2' into view and out</h2>
+    <section class="m m1">
+      m1
+    </section>
+    <hr/>
+    <section class="m m2">
+      m2
+    </section>
+    <footer>
+      <a href="https://github.com/egoist/jquery-scrollIntoView">View Advance Usage on GitHub</a>
+    </footer>
+    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+    <script src="./jquery.scrollintoview.js"></script>
+    <script>
+      $(function () {
+
+        var mount = function () {
+          $('body').css('background-color', 'red')
+          console.log('hi')
+        }
+        var unmount = function () {
+          $('body').css('background-color', '#fff')
+          console.log('out')
+        }
+        $('.m2').scrollIntoView(mount, unmount, true)
+      })
+    </script>
+  </body>
+</html>
