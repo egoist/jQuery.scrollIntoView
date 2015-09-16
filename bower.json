@@ -1,0 +1,17 @@
+{
+  "name": "jquery-scrollIntoView",
+  "homepage": "https://github.com/egoist/jQuery.scrollIntoView",
+  "authors": [
+    "AprilOrange <aprilorange.net@icloud.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "gulpfile.babel.js"
+  ]
+}

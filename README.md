@@ -4,9 +4,15 @@ When a DIV is scrolled into or out of the visible part of browser it executes a 
 
 ![demo](http://ww4.sinaimg.cn/large/a15b4afegw1ew4n37b0hig211g0ha4qp.gif)
 
+## Install
+
+```
+bower install jquery-scrollIntoView
+```
+
 ## Usage
 
-$.scrollIntoView(mount, unmount, once)
+**$.scrollIntoView(mount, unmount, once)**
 
 **mount**: function, executed when scrolled into the view  
 **unmount**: function, executed when scrolled out of the view  
