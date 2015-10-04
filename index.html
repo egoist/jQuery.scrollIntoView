@@ -35,6 +35,9 @@
       .m1 {
         margin-top: 40px;
       }
+      .m2 {
+        margin-bottom: 600px;
+      }
       footer {
         margin: 80px 0;
       }
@@ -57,21 +60,6 @@
     <footer>
       <a href="https://github.com/egoist/jQuery.scrollIntoView">View Advance Usage on GitHub</a>
     </footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./jquery.scrollintoview.js"></script>
-    <script>
-      $(function () {
-
-        var mount = function () {
-          $('body').css('background-color', 'red')
-          console.log('hi')
-        }
-        var unmount = function () {
-          $('body').css('background-color', '#fff')
-          console.log('out')
-        }
-        $('.m2').scrollIntoView(mount, unmount, true)
-      })
-    </script>
+    <script src="./webpack.bundle.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 ;(function (W, $) {
 
-  $.fn.scrollIntoView = function (mount, unmount, once) {
+  function scrolledIntoView (mount, unmount, once) {
 
     var inView = false
     mount = mount || null
@@ -47,4 +47,10 @@
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop))
   }
 
-})(window, jQuery);
+  $.fn.scrollIntoView = scrolledIntoView
+
+  if (typeof module !== 'undefined') {
+    module.exports = scrolledIntoView
+  }
+
+})(window, (typeof window.jQuery !== 'undefined') ? window.jQuery : require('jquery'));

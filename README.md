@@ -8,6 +8,7 @@ When a DIV is scrolled into or out of the visible part of browser it executes a 
 
 ```
 bower install jquery-scrollIntoView
+npm install jquery-scrollintoview
 ```
 
 ## Usage
